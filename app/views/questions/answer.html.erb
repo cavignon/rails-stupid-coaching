@@ -1,0 +1,31 @@
+<h1> Stupid Coaching </h1>
+
+
+<p class="fst-italic"> <%= params[:question] %> </p>
+<p class="fst-italic"> -You </p>
+
+<p> <%= @coach %> </p>
+<p class="fst-italic"> -Your coach </p>
+
+
+
+
+<%# <% if params[:question].include? "I am going to work" %>
+  <%# <div class="border-left">
+    <p class="fw-bold">Great!</p>
+    <p class="fst-italic bg-warning p-2 text-dark bg-opacity-25">-Your coach</p>
+  </div> %>
+<%# elsif params[:question].include? "?" %>
+  <%# <div class="border-left">
+    <p class="fw-bold bg-warning p-2 text-dark bg-opacity-25">Silly question, get dressed and go to work!</p>
+    <p class="fst-italic bg-warning p-2 text-dark bg-opacity-25">-Your coach</p>
+  </div> %>
+<%# else %>
+  <%# <div class="px-5 bg-warning p-2 text-dark bg-opacity-25 border-left">
+    <p class="fw-bold">I dont care, get dressed and go to work!</p>
+    <p class="fst-italic">-Your coach</p>
+  </div> %>
+<%# end %>
+
+
+<%= link_to "Ask a new question", ask_path %>
